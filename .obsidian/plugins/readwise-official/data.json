@@ -1,0 +1,27 @@
+{
+  "token": "KF6Ik8yEfrleHHluAbGEzHBOanwhWsZWS0764cTxvrYPIMNeCH",
+  "readwiseDir": "Readwise",
+  "frequency": "60",
+  "triggerOnLoad": true,
+  "isSyncing": false,
+  "lastSyncFailed": true,
+  "lastSavedStatusID": 13110129,
+  "currentSyncStatusID": 0,
+  "refreshBooks": false,
+  "booksToRefresh": [],
+  "booksIDsMap": {
+    "Readwise/Articles/Alex Xu - System Design Interview.md": "36188457",
+    "Readwise/Articles/FromSergio - Readwise Reader - How I Process EVERYTHING I Read.md": "36498173",
+    "Readwise/Articles/James Clear - Atomic Habits Tiny Changes, Remarkable Results.md": "36976588",
+    "Readwise/Articles/Nicole van der Hoeven - How to Process Notes in Obsidian  Readwise Official Obsidian Plugin.md": "36977097",
+    "Readwise/Articles/HealthyGamerGG - Does Journaling Actually Work.md": "37304176",
+    "Readwise/Articles/Ali Abdaal - Change Your Life by Journalling in 2024.md": "37360300",
+    "Readwise/Articles/Ali Abdaal - How I Manage My Time - The Trident Calendar System.md": "37433488",
+    "Readwise/Articles/Better Ideas - 7 things that (quickly) cured my procrastination.md": "37467793",
+    "Readwise/Articles/HealthyGamerGG - Dr. K, How Do I Focus.md": "37470905",
+    "Readwise/Articles/HealthyGamerGG - The Secret Behind Resisting Dopamine.md": "37531367",
+    "Readwise/Articles/HealthyGamerGG - The Science of Self Control.md": "37841480",
+    "Readwise/Articles/Fireship - 25 VS Code Productivity Tips and Speed Hacks.md": "37884744"
+  },
+  "reimportShowConfirmation": true
+}

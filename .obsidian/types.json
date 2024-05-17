@@ -1,0 +1,23 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "code": "number",
+    "type": "text",
+    "total_hours": "number",
+    "sections": "number",
+    "lectures": "number",
+    "instructor": "multitext",
+    "course_name": "text",
+    "title": "text",
+    "module_number": "number",
+    "applications": "number",
+    "spending": "number",
+    "workout": "number",
+    "read": "number",
+    "current_lecture": "text",
+    "pomodoro_count": "number",
+    "textbook": "multitext"
+  }
+}

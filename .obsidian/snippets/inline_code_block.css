@@ -1,0 +1,7 @@
+code, span.cm-inline-code {
+  background-color: #141419 !important;
+}
+
+pre > code {
+  background-color: inherit !important;
+}

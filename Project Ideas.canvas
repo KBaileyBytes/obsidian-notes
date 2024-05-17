@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"92a12964c6d74014","x":-1990,"y":-830,"width":3980,"height":1660,"color":"6","type":"group","label":"Streamer Interaction Web App"},
+		{"id":"f4e715f3407e10bc","type":"group","x":570,"y":-270,"width":1400,"height":760,"color":"5","label":"Q&A Wireframe"},
+		{"id":"6d30f5e68099a1b9","type":"group","x":-870,"y":90,"width":1380,"height":720,"color":"2","label":"Wireframe"},
+		{"id":"c20cb6d6ed5a6165","type":"text","text":"","x":610,"y":-239,"width":1320,"height":689},
+		{"id":"2f90e515fa8bd854","type":"text","text":"","x":610,"y":-239,"width":1243,"height":69},
+		{"id":"a901f1a9c2828d30","type":"text","text":"```js\n{\n\tquestions: [\n\t\t{\n\t\t\tuser_id: \"\", // Seperate questions table or part of [user]'s?\n\t\t\tquestion: \"\",\n\t\t\tcreated_at: ,\n\t\t\tmodified_at: ,\n\t\t\tanswered: false,\n\t\t\t...\n\t\t},\n\t\t...\n\t],\n}\n```","x":812,"y":5,"width":1000,"height":410},
+		{"id":"cb2176f9087ecb68","type":"text","text":"[Logo]","x":650,"y":-239,"width":122,"height":69},
+		{"id":"7238c1f90be99761","type":"text","text":"## 💡 Project Idea\n![[Pasted image 20240415164626.png | center | 800]]\n- https://www.linkedin.com/feed/update/urn:li:activity:7184826023463579648/\n- Make this but Twitch Streamer oriented.\n\t- Twitch API?\n\t- Username / anonymous\n\t- Polls\n\t- Wheel\n\t- Live Charts / Graphs","x":-1970,"y":-810,"width":872,"height":1580},
+		{"id":"5305cc40f63602cd","type":"text","text":"[Username]","x":1232,"y":-70,"width":160,"height":60},
+		{"id":"1c6e3a6b175b4649","type":"text","text":"[Profile Pic]","x":1228,"y":-150,"width":167,"height":60},
+		{"id":"9fedd1a50e6f01ec","type":"text","text":"Login | Register","x":1732,"y":-239,"width":198,"height":69},
+		{"id":"8662350ded1e6f30","type":"text","text":"","x":-800,"y":136,"width":1243,"height":629},
+		{"id":"b484c34071260c84","type":"text","text":"Poll 📊","x":-437,"y":345,"width":200,"height":80},
+		{"id":"f2bdd23c2aeca58c","type":"text","text":"Q&A ❓","x":-97,"y":345,"width":200,"height":80,"color":"5"},
+		{"id":"ab14abe28389f35d","type":"text","text":"Random 🎲","x":-437,"y":485,"width":200,"height":80},
+		{"id":"25978b34fd339e40","type":"text","text":"Settings ⚙","x":-97,"y":485,"width":200,"height":80},
+		{"id":"ab236186d3fe8f8b","type":"text","text":"","x":-800,"y":136,"width":1243,"height":69},
+		{"id":"92afe62f026a6213","type":"text","text":"[Logo]","x":-757,"y":136,"width":122,"height":69},
+		{"id":"eebb9dddbeb61d29","type":"text","text":"Login | Register","x":245,"y":136,"width":198,"height":69}
+	],
+	"edges":[
+		{"id":"6c41927b0b785f98","fromNode":"7238c1f90be99761","fromSide":"right","toNode":"8662350ded1e6f30","toSide":"left"},
+		{"id":"5ebe6457d3bdaecb","fromNode":"f2bdd23c2aeca58c","fromSide":"right","toNode":"c20cb6d6ed5a6165","toSide":"left","color":"5"}
+	]
+}

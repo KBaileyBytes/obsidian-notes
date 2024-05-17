@@ -1,0 +1,22 @@
+{
+  "accentColor": "#ffac2e",
+  "cssTheme": "AnuPpuccin",
+  "enabledCssSnippets": [
+    "red_close",
+    "tag_color",
+    "center_image",
+    "remove_active_background_color",
+    "extended-colorschemes",
+    "supercharged-links-gen",
+    "darker_bars",
+    "inline_code_block",
+    "progress_bar"
+  ],
+  "textFontFamily": "JetBrains Mono,Atkinson Hyperlegible,Myriad Pro,Montserrat,Inter,Garamond",
+  "interfaceFontFamily": "JetBrains Mono,Atkinson Hyperlegible,Myriad Pro,Inter",
+  "monospaceFontFamily": "FiraCode Nerd Font,Inter,Myriad Pro,Cascadia Code",
+  "theme": "obsidian",
+  "baseFontSize": 20,
+  "showViewHeader": true,
+  "translucency": false
+}

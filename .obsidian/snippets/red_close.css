@@ -1,0 +1,4 @@
+div.titlebar-button.mod-close:hover{
+  background-color: rgb(165, 0, 0) !important;
+  color: white;
+}

@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"0a6df1c255e1af8f","type":"link","url":"https://cubecobra.com/cube/list/7dfffbf9-0191-4ab0-8879-9e320807a895","x":-600,"y":-460,"width":1201,"height":920},
+		{"id":"a5fea446fd377fac","x":-600,"y":560,"width":1201,"height":880,"type":"link","url":"https://cubecobra.com/dashboard"}
+	],
+	"edges":[]
+}

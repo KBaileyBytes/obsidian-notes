@@ -1,0 +1,17 @@
+{
+  "readableLineLength": false,
+  "showLineNumber": false,
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notes",
+  "attachmentFolderPath": "Media",
+  "strictLineBreaks": false,
+  "foldHeading": true,
+  "foldIndent": true,
+  "propertiesInDocument": "visible",
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "/Notes/[\\w\\s]+ -$/"
+  ]
+}

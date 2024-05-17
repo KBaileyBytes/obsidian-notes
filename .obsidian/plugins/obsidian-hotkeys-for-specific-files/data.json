@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "useMoment": false,
+      "file": "Dashboard.canvas"
+    }
+  ],
+  "useExistingPane": true,
+  "useHoverEditor": false
+}

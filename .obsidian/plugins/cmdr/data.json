@@ -1,0 +1,90 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "switcher:open",
+      "icon": "lucide-navigation",
+      "name": "Quick switcher: Open quick switcher",
+      "mode": "any",
+      "color": "#002aff"
+    },
+    {
+      "id": "daily-notes",
+      "icon": "lucide-calendar-days",
+      "name": "Daily notes: Open today's daily note",
+      "mode": "any",
+      "color": "#0084ff"
+    },
+    {
+      "id": "insert-template",
+      "icon": "lucide-copy",
+      "name": "Templates: Insert template",
+      "mode": "any",
+      "color": "#00b3ff"
+    },
+    {
+      "id": "command-palette:open",
+      "icon": "lucide-terminal-square",
+      "name": "Command palette: Open command palette",
+      "mode": "any",
+      "color": "#00d5ff"
+    },
+    {
+      "id": "templater-obsidian:create-new-note-from-template",
+      "icon": "arrow-left-circle",
+      "name": "Templater: Create new note from template",
+      "mode": "any",
+      "color": "#00fffb"
+    },
+    {
+      "id": "homepage:open-homepage",
+      "icon": "home",
+      "name": "Homepage: Open homepage",
+      "mode": "any",
+      "color": "#4c00ff"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "properties:open-local",
+      "icon": "align-left",
+      "name": "Properties view: Show file properties",
+      "mode": "any",
+      "color": "#0084ff"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "Create new canvas",
+      "Open today's daily note",
+      "Insert template",
+      "Open command palette",
+      "Templater",
+      "Open quick switcher",
+      "Open graph view",
+      "Advanced Tables Toolbar",
+      "Open homepage"
+    ]
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

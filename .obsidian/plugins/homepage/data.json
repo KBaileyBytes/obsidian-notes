@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "homepages": {
+    "Main Homepage": {
+      "value": "Dashboard.canvas",
+      "kind": "File",
+      "openOnStartup": true,
+      "openMode": "Replace all open notes",
+      "manualOpenMode": "Keep open notes",
+      "view": "Default view",
+      "revertView": true,
+      "openWhenEmpty": true,
+      "refreshDataview": true,
+      "autoCreate": true,
+      "autoScroll": false,
+      "pin": true,
+      "commands": [
+        "daily-notes",
+        "workspace:previous-tab"
+      ],
+      "alwaysApply": true,
+      "hideReleaseNotes": false
+    }
+  },
+  "separateMobile": false
+}
