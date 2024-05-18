@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "adc86efe0e15106a",
+        "id": "9e2e1db55e1715e6",
         "type": "tabs",
         "children": [
           {
-            "id": "c20828c1bddbbe66",
+            "id": "0a428179d6de94e2",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -23,8 +23,21 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "79b1d29d6aa5a875",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Linux APT vs DnF Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dashboard.canvas",
+                "file": "Notes/Linux APT vs DnF Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dashboard.canvas",
+                "file": "Notes/Linux APT vs DnF Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Dashboard.canvas"
+                "file": "Notes/Linux APT vs DnF Commands.md"
               }
             }
           }
@@ -178,10 +191,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c20828c1bddbbe66",
+  "active": "79b1d29d6aa5a875",
   "lastOpenFiles": [
-    "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
     "Dashboard.canvas",
+    "Notes/Linux APT vs DnF Commands.md",
+    "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
     "Notes/React.md",
     "Project Ideas.canvas",
     "MTG.canvas",
@@ -225,7 +239,6 @@
     "Timestamps/May 08, 2024.md",
     "Timestamps/May 07, 2024.md",
     "Templates/Daily Note Template.md",
-    "Timestamps/May 06, 2024.md",
     "Media/Pasted image 20240430095809.png",
     "I",
     "Untitled 1.canvas"
