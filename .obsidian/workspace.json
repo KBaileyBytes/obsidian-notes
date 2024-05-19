@@ -4,64 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "adc86efe0e15106a",
+        "id": "16bfd3cc1874665f",
         "type": "tabs",
         "children": [
           {
-            "id": "c20828c1bddbbe66",
+            "id": "a64f290889ff226d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Timestamps/May 17, 2024.md",
+                "file": "Timestamps/May 18, 2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4a5b2233f09943b6",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Dashboard.canvas",
-                "viewState": {
-                  "x": 1355.9080917113279,
-                  "y": -359.8878741605214,
-                  "zoom": -1.0745907199946103
-                }
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "2f515285ce90baac",
+            "id": "fcf303b9fbee6ab9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/React.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b73a326cb3a41f9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
+                "file": "Notes/React Module 11 -.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/React.md",
+                "file": "Timestamps/May 18, 2024.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/React.md",
+                "file": "Timestamps/May 18, 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +156,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/React.md"
+                "file": "Timestamps/May 18, 2024.md"
               }
             }
           }
@@ -215,9 +185,15 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "2f515285ce90baac",
+  "active": "a64f290889ff226d",
   "lastOpenFiles": [
     "Dashboard.canvas",
+    "Timestamps/May 18, 2024.md",
+    "Notes/React Module 11 -.md",
+    "Timestamps/May 17, 2024.md",
+    "Notes/Test.md",
+    "Notes/React.md",
+    "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
     "Project Ideas.canvas",
     "MTG.canvas",
     "Media/Pasted image 20240116180705.png",
@@ -234,10 +210,6 @@
     "Library/System Design Interview An Insider’s Guide by Alex Xu (z-lib.org).pdf",
     "Library/vscode-keyboard-shortcuts-windows.pdf",
     "Library/UdemyNodeNotes.pdf",
-    "Notes/React Module 11 -.md",
-    "Notes/React.md",
-    "Timestamps/May 17, 2024.md",
-    "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
     "Notes/www.netflix.com.md",
     "Notes/Node.js Module 11 - REST APIs and Mongoose.md",
     "Notes/HTTP.md",
@@ -261,8 +233,6 @@
     "Notes/React Module 8 - Working with Refs & Portals.md",
     "Timestamps/May 08, 2024.md",
     "Timestamps/May 07, 2024.md",
-    "Templates/Daily Note Template.md",
-    "Timestamps/May 06, 2024.md",
     "Media/Pasted image 20240430095809.png",
     "I",
     "Untitled 1.canvas"
