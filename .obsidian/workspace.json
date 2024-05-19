@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9e2e1db55e1715e6",
+        "id": "4bb107a7339d365f",
         "type": "tabs",
         "children": [
           {
-            "id": "0a428179d6de94e2",
+            "id": "2c94909f852541ec",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -18,19 +18,19 @@
                 "viewState": {
                   "x": 1473.5,
                   "y": -226.5,
-                  "zoom": -0.4706661598287913
+                  "zoom": -1.3480921248794728
                 }
               },
               "pinned": true
             }
           },
           {
-            "id": "79b1d29d6aa5a875",
+            "id": "729c00e0d7eb1a1a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Linux APT vs DnF Commands.md",
+                "file": "Notes/EMacs Tutorial.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Linux APT vs DnF Commands.md",
+                "file": "Notes/EMacs Tutorial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Linux APT vs DnF Commands.md",
+                "file": "Notes/EMacs Tutorial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/Linux APT vs DnF Commands.md"
+                "file": "Notes/EMacs Tutorial.md"
               }
             }
           }
@@ -191,9 +191,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "79b1d29d6aa5a875",
+  "active": "729c00e0d7eb1a1a",
   "lastOpenFiles": [
     "Dashboard.canvas",
+    "Notes/EMacs Tutorial.md",
     "Notes/Linux APT vs DnF Commands.md",
     "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
     "Notes/React.md",
@@ -238,7 +239,6 @@
     "Notes/React Module 8 - Working with Refs & Portals.md",
     "Timestamps/May 08, 2024.md",
     "Timestamps/May 07, 2024.md",
-    "Templates/Daily Note Template.md",
     "Media/Pasted image 20240430095809.png",
     "I",
     "Untitled 1.canvas"
