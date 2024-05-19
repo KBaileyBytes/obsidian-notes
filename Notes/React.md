@@ -10,7 +10,7 @@ link_to: https://www.udemy.com/course/react-the-complete-guide-incl-redux/
 sections: 38
 lectures: 695
 status: Ongoing
-current_lecture: "138"
+current_lecture: "175"
 textbook: 
 language: JavaScript
 ---
