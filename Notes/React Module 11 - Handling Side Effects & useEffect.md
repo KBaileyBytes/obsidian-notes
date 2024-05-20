@@ -18,7 +18,7 @@ icon: bullseye
 
 - [x] What is a Side Effect
 - [x] useEffect Hook
-- [ ] Effects & Dependencies
+- [x] Effects & Dependencies
 - [ ] When **not** to use useEffect
 
 ```
@@ -46,7 +46,7 @@ useEffect(() => {
 ### Dependency Array
 
 - **Empty Array (`[]`)**: The effect runs only once, after the initial render.
-- **Array with Dependencies**: The effect runs whenever the specified dependencies change.
+- **Array with Dependencies**: The effect runs whenever the specified dependencies change *after* the initial render
 
 ### Cleanup Function
 
@@ -151,7 +151,6 @@ title: Alternative Exposition of Modal Properties
 
 ````ad-code
 title: before.jsx
-collapse: 
 
 ```jsx
 import { forwardRef, useImperativeHandle, useRef } from 'react';
@@ -184,12 +183,115 @@ export default Modal;
 
 ````
 
+<br>
 
+````ad-code
+title: after.jsx
+
+```jsx
+import { useRef, useEffect } from "react";
+import { createPortal } from "react-dom";
+
+export default function Modal({ open, children }) {
+  const dialog = useRef();
+
+  useEffect(() => {
+    if (open) {
+      dialog.current.showModal();
+    } else {
+      dialog.current.close();
+    }
+  }, [open]);
+
+  return createPortal(
+    <dialog className="modal" ref={dialog}>
+      {children}
+    </dialog>,
+    document.getElementById("modal")
+  );
+}
+```
+````
 
 
 `````
 
+## What are Effect Dependencies?
 
+Effect dependencies are the values that, when changed, will trigger the re-execution of an effect. These are specified as an array in the second argument of the `useEffect` function. The dependency array tells React when to re-run the effect by comparing the current values of the dependencies to their values from the last render.
+
+#### Ex.
+```jsx
+import { useState, useEffect } from "react";
+
+export default function ExampleComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // This code runs after every render
+    document.title = `You clicked ${count} times`;
+
+    // Cleanup function (optional)
+    return () => {
+      // Cleanup code runs before the next effect or component unmount
+    };
+  }, [count]); // Effect depends on `count`
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount((oldState) => oldState + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+```
+
+
+`````ad-warning
+title: Using Function Dependencies
+
+```jsx
+import { useEffect } from "react";
+
+export default function DeleteConfirmation({ onConfirm, onCancel }) {
+  useEffect(() => {
+    console.log("Timer set");
+    const timer = setTimeout(() => {
+      onConfirm();
+    }, 3000);
+
+    return () => {
+      console.log("Cleanup Timer");
+      clearTimeout(timer);
+    };
+  }, [onConfirm]); // onConfirm cleanup function in parent component
+
+  return (
+    <div id="delete-confirmation">
+      // ...
+    </div>
+  );
+}
+```
+
+When you pass a function as a dependency to a useEffect hook, the behavior depends on whether the function is *stable* or not. In React, functions (like other objects) are compared by reference. Each render creates new function references unless they are memoized using useCallback or similar.
+
+#### What Happens with Function Dependencies
+
+1. Effect Setup: The useEffect runs after the initial render and sets up the effect (in this case, setting a timer).
+2. Effect Cleanup: When the dependencies change (i.e., the `onConfirm` function reference changes, when the parent component re-renders), the cleanup function from the previous effect run is executed. This ensures any resources like timers, subscriptions, or event listeners set up by the effect are properly cleaned up.
+3. Effect Re-run: The effect is then re-run with the new function reference in its dependency array.
+
+
+<br>
+
+#### Why This Matters
+
+If `onConfirm` changes frequently (which can happen if it’s defined inline or passed down from a parent component that redefines it on each render), the effect will constantly clean up and re-set the timer, leading to potential performance issues and unexpected behavior.
+`````
 
 ---
 Created: January 5, 2024

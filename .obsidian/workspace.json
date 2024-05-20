@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0729877dee325e4f",
+        "id": "9ffec976fd86a404",
         "type": "tabs",
         "children": [
           {
-            "id": "1760b581957aed58",
+            "id": "86ff65748b81a3da",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -25,19 +25,31 @@
             }
           },
           {
-            "id": "e645ac44b0dd41b9",
+            "id": "952720d65ace1970",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Timestamps/May 19, 2024.md",
+                "file": "Timestamps/May 20, 2024.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e83aa9cc8c8486ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Timestamps/May 19, 2024.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Timestamps/May 19, 2024.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Timestamps/May 19, 2024.md"
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md"
               }
             }
           }
@@ -191,20 +203,22 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e645ac44b0dd41b9",
+  "active": "e83aa9cc8c8486ab",
   "lastOpenFiles": [
-    "Notes/Linux APT vs DnF Commands.md",
-    "Notes/EMacs Tutorial.md",
+    "Notes/React Module 8 - Working with Refs & Portals.md",
+    "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+    "Timestamps/May 20, 2024.md",
     "Dashboard.canvas",
     "Timestamps/May 19, 2024.md",
-    "Notes/React Module 11 -.md",
+    "Project Ideas.canvas",
+    "MTG.canvas",
+    "Notes/Linux APT vs DnF Commands.md",
+    "Notes/EMacs Tutorial.md",
     "Timestamps/May 18, 2024.md",
     "Timestamps/May 17, 2024.md",
     "Notes/Test.md",
     "Notes/React.md",
     "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
-    "Project Ideas.canvas",
-    "MTG.canvas",
     "Media/Pasted image 20240116180705.png",
     "Media/Pasted image 20240116175757.png",
     "Media/Pasted image 20231230110702.png",
@@ -238,8 +252,6 @@
     "Timestamps/May 11, 2024.md",
     "Notes/Node.js Module 10 - MongoDB and Promises.md",
     "Timestamps/May 10, 2024.md",
-    "Timestamps/May 09, 2024.md",
-    "Notes/React Module 8 - Working with Refs & Portals.md",
     "Media/Pasted image 20240430095809.png",
     "I",
     "Untitled 1.canvas"
