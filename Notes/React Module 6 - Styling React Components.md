@@ -487,6 +487,12 @@ title: TailwindCSS Installation Guide
 > npx tailwindcss init -p
 ```
 
+This will create two configuration files:
+
+- `tailwind.config.js`
+- `postcss.config.js`
+
+
 <br>
 
 ## 3. Configure the template paths
