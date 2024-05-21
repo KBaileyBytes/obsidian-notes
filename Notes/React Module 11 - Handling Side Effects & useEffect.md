@@ -291,6 +291,58 @@ When you pass a function as a dependency to a useEffect hook, the behavior depen
 #### Why This Matters
 
 If `onConfirm` changes frequently (which can happen if it’s defined inline or passed down from a parent component that redefines it on each render), the effect will constantly clean up and re-set the timer, leading to potential performance issues and unexpected behavior.
+
+<br>
+
+````ad-tip
+title: Solving with useCallback
+
+### What is `useCallback`?
+
+useCallback returns a memoized version of a callback function that only changes if one of the dependencies has changed. This is useful for passing stable references to child components that rely on reference equality to avoid unnecessary renders.
+
+It is a simple way to add security to your function dependencies without worrying about additional renders.
+
+#### Basic Syntax
+```jsx
+const memoizedCallback = useCallback(() => {
+	// Function logic here
+}, [dependencies])
+```
+
+
+<br>
+
+#### Example
+```jsx
+import React, { useState, useCallback } from 'react';
+
+function ChildComponent({ onClick }) {
+  console.log('ChildComponent rendered');
+  return <button onClick={onClick}>Click me</button>;
+}
+
+function ParentComponent() {
+  const [count, setCount] = useState(0);
+
+  // Without useCallback, this function is re-created on every render
+  // Therefore, pointlessly re-rendering the child component
+  const handleClick = useCallback(() => {
+    console.log('Button clicked');
+  }, []); // Empty dependency array means this function is created only once
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <ChildComponent onClick={handleClick} />
+    </div>
+  );
+}
+
+export default ParentComponent;
+```
+````
 `````
 
 ---
