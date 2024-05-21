@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1e8d5ac665462e98",
+            "id": "007e245edf5d9e5d",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -16,40 +16,28 @@
               "state": {
                 "file": "Dashboard.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
+                  "x": 1295.2712285221487,
+                  "y": -380.87335808242574,
+                  "zoom": -1.1863260023346087
                 }
               },
               "pinned": true
             }
           },
           {
-            "id": "007e245edf5d9e5d",
+            "id": "e37dd6fe8e1a8c37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Timestamps/May 21, 2024.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c4618b74bb8ae61a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "file": "Notes/React Module 11 -.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5026054382324,
-    "collapsed": true
+    "width": 392.5026054382324
   },
   "right": {
     "id": "db07a7bc967bad30",
@@ -117,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "file": "Notes/React Module 11 -.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "file": "Notes/React Module 11 -.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +161,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md"
+                "file": "Notes/React Module 11 -.md"
               }
             }
           }
@@ -203,16 +190,18 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c4618b74bb8ae61a",
+  "active": "e37dd6fe8e1a8c37",
   "lastOpenFiles": [
-    "Timestamps/May 21, 2024.md",
+    "Notes/React Event Management.md",
+    "Notes/ODM vs ORM.md",
+    "Project Ideas.canvas",
+    "MTG.canvas",
     "Dashboard.canvas",
+    "Timestamps/May 21, 2024.md",
     "Notes/React Module 8 - Working with Refs & Portals.md",
     "Notes/React Module 11 - Handling Side Effects & useEffect.md",
     "Timestamps/May 20, 2024.md",
     "Timestamps/May 19, 2024.md",
-    "Project Ideas.canvas",
-    "MTG.canvas",
     "Notes/Linux APT vs DnF Commands.md",
     "Notes/EMacs Tutorial.md",
     "Timestamps/May 18, 2024.md",
@@ -250,7 +239,6 @@
     "Media/Pasted image 20240513113122.png",
     "Notes/React Module 9 - Practice Project - Refs, State, Portals.md",
     "Timestamps/May 12, 2024.md",
-    "Timestamps/May 11, 2024.md",
     "Media/Pasted image 20240430095809.png",
     "I",
     "Untitled 1.canvas"
