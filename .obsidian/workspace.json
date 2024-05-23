@@ -35,9 +35,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "95ee8cbcc37da9b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Node.js Module 11 - REST APIs and Mongoose.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "079c821ec52e16d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -105,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Timestamps/May 23, 2024.md",
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +146,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Timestamps/May 23, 2024.md",
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Timestamps/May 23, 2024.md"
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md"
               }
             }
           }
@@ -191,10 +215,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "0ba224c0276ef86b",
+  "active": "079c821ec52e16d7",
   "lastOpenFiles": [
-    "Dashboard.canvas",
+    "Notes/Node.js Module 11 - REST APIs and Mongoose.md",
+    "Notes/Node.js.md",
     "Timestamps/May 23, 2024.md",
+    "Dashboard.canvas",
     "Timestamps/May 22, 2024.md",
     "Notes/Python.md",
     "Timestamps/May 21, 2024.md",
@@ -226,9 +252,7 @@
     "Library/vscode-keyboard-shortcuts-windows.pdf",
     "Library/UdemyNodeNotes.pdf",
     "Notes/www.netflix.com.md",
-    "Notes/Node.js Module 11 - REST APIs and Mongoose.md",
     "Notes/HTTP.md",
-    "Notes/Node.js.md",
     "Notes/Basic Mongoose Validation.md",
     "Timestamps/May 16, 2024.md",
     "Timestamps/May 15, 2024.md",
