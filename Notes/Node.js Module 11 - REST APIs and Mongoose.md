@@ -16,8 +16,9 @@ module_number: 11
 title: Learning Objectives
 icon: bullseye
 
-- [ ] [[#Creating a REST API]]
-- [ ] Mongoose Basics
+- [x] [[#Creating a REST API]]
+- [x] Mongoose Basics
+- [x] Express Routers
 
 ```
 
@@ -137,6 +138,39 @@ By using the Router function, you can define multiple routes within a single fil
 7. **Mounting Routers**: You can mount a Router instance on a specific route path in your main Express application using the `app.use()` method. This enables you to create modular and nested route structures within your application.
 
 ````
+
+
+## Express Routing
+---
+
+Express routers allow you to break your application into smaller modules, each handling a specific part of your app's functionality. This can make your code more organized and maintainable:
+
+```js
+// users.js
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+    res.send('Users home');
+});
+
+router.get('/:id', (req, res) => {
+    res.send(`User with ID ${req.params.id}`);
+});
+
+module.exports = router;
+
+// main app
+const express = require('express');
+const app = express();
+const usersRouter = require('./users');
+
+app.use('/users', usersRouter);
+
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
+```
 
 ---
 Created: January 5, 2024

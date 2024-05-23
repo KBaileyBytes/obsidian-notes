@@ -30,7 +30,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "file": "Notes/Node.js Module 11 - REST APIs and Mongoose.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md"
+                "file": "Notes/Node.js Module 12 - API Authentication and Security.md"
               }
             }
           }
@@ -239,9 +239,7 @@
     "Library/vscode-keyboard-shortcuts-windows.pdf",
     "Library/UdemyNodeNotes.pdf",
     "Notes/www.netflix.com.md",
-    "Notes/Node.js Module 11 - REST APIs and Mongoose.md",
     "Notes/HTTP.md",
-    "Notes/Node.js.md",
     "Notes/Basic Mongoose Validation.md",
     "Timestamps/May 16, 2024.md",
     "Timestamps/May 15, 2024.md",
