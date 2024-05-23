@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e3d71f2b9e95203c",
+        "id": "66fa6bf7164b6188",
         "type": "tabs",
         "children": [
           {
-            "id": "007e245edf5d9e5d",
+            "id": "35dd9c7c1701c9ad",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -16,21 +16,33 @@
               "state": {
                 "file": "Dashboard.canvas",
                 "viewState": {
-                  "x": 1295.2712285221487,
-                  "y": -380.87335808242574,
-                  "zoom": -1.1863260023346087
+                  "x": 1473.5,
+                  "y": -226.5,
+                  "zoom": -0.765534746362977
                 }
               },
               "pinned": true
             }
           },
           {
-            "id": "e37dd6fe8e1a8c37",
+            "id": "f29002c13b748ed2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/React Module 11 -.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e419be6c8778025",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/React Module 6 - Styling React Components.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,7 +99,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 392.5026054382324
+    "width": 392.5026054382324,
+    "collapsed": true
   },
   "right": {
     "id": "db07a7bc967bad30",
@@ -104,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/React Module 11 -.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/React Module 11 -.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +174,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/React Module 11 -.md"
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md"
               }
             }
           }
@@ -190,16 +203,18 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e37dd6fe8e1a8c37",
+  "active": "f29002c13b748ed2",
   "lastOpenFiles": [
+    "Notes/React Module 6 - Styling React Components.md",
+    "Notes/React Module 11 - Handling Side Effects & useEffect.md",
+    "Notes/React Module 11 -.md",
+    "Dashboard.canvas",
     "Notes/React Event Management.md",
     "Notes/ODM vs ORM.md",
     "Project Ideas.canvas",
     "MTG.canvas",
-    "Dashboard.canvas",
     "Timestamps/May 21, 2024.md",
     "Notes/React Module 8 - Working with Refs & Portals.md",
-    "Notes/React Module 11 - Handling Side Effects & useEffect.md",
     "Timestamps/May 20, 2024.md",
     "Timestamps/May 19, 2024.md",
     "Notes/Linux APT vs DnF Commands.md",
@@ -237,8 +252,6 @@
     "Timestamps/May 13, 2024.md",
     "Media/Pasted image 20240513113338.png",
     "Media/Pasted image 20240513113122.png",
-    "Notes/React Module 9 - Practice Project - Refs, State, Portals.md",
-    "Timestamps/May 12, 2024.md",
     "Media/Pasted image 20240430095809.png",
     "I",
     "Untitled 1.canvas"
