@@ -2,7 +2,7 @@
 tags:
   - module
 lecture_count: "16"
-current_lecture: "1"
+current_lecture: "16"
 length: 1hr 21min
 status: Ongoing
 course_link: "[[React]]"

@@ -16,9 +16,9 @@
               "state": {
                 "file": "Dashboard.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
+                  "x": 1473.5,
+                  "y": -226.5,
+                  "zoom": -0.765534746362977
                 }
               },
               "pinned": true
@@ -61,7 +61,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -229,11 +229,8 @@
     "Notes/Python.md",
     "Timestamps/May 21, 2024.md",
     "Notes/React Module 8 - Working with Refs & Portals.md",
-    "Notes/React Module 11 - Handling Side Effects & useEffect.md",
     "Timestamps/May 20, 2024.md",
     "Timestamps/May 19, 2024.md",
-    "Project Ideas.canvas",
-    "MTG.canvas",
     "Notes/Linux APT vs DnF Commands.md",
     "Notes/EMacs Tutorial.md",
     "Timestamps/May 18, 2024.md",
