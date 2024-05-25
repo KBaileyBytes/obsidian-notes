@@ -16,7 +16,7 @@ module_number: 12
 title: Learning Objectives
 icon: bullseye
 
-- [ ] Authentication
+- [ ] [[#Authentication]]
 - [x] [[#Password Encryption (bcrypt)]]
 - [ ] Data Relationships (FK?)
 
@@ -152,6 +152,156 @@ router.patch("/users/:id", async (req, res) => {
 
 ## Authentication
 ---
+
+In order to authenticate our Users, we need to do 2 things:
+
+1. Verify that the provided `email` exists with an associated User
+2. Compare the provided plain-text password with the encrypted password from the found User
+
+Mongoose allows us to define custom functions through a defined schema with a `statics` property with the following syntax:
+
+```
+schema.statics.customFunctionName = async () => { }
+```
+
+
+`````ad-seealso
+title: What is the `statics` property?
+collapse: 
+
+The `statics` property is used to define static methods for your model. Static methods are functions that you can call directly on the model itself, tather than on an instance of the model. These methods are typically used for operations that are not specific to a single document, such as custom queries or utility functions related to the entire collection of documents.
+
+`````
+
+#### Ex.
+```js
+// Find w/ credentials
+userSchema.statics.findByCredentials = async (email, password) => {
+  const user = await User.findOne({ email });
+
+  if (!user) {
+    throw new Error("Unable to login");
+  }
+
+  const isMatch = await bcrypt.compare(password, user.password);
+
+  if (!isMatch) {
+    throw new Error("Unable to login");
+  }
+
+  return user;
+};
+```
+
+
+---
+
+
+Now that we have a way to validate an incoming request body, we just need to create a route to execute it with.
+
+```js
+// Log in user
+router.post("/users/login", async (req, res) => {
+  try {
+    const user = await User.findByCredentials(
+      req.body.email,
+      req.body.password
+    );
+    res.send(user);
+  } catch (e) {
+    res.status(400).send();
+  }
+});
+```
+
+```ad-question
+title: Why do we use `POST` instead of `GET`? 
+
+Quickread: [[HTTP#Methods]]
+
+TLDR:
+- **GET**: Used to retrieve data from the server. It should not have any side effects.
+- **POST**: Used to submit data to the server, often causing a change in state or side effects on the server.
+
+Since logging in involves sending sensitive information (such as a username and password) to the server to authenticate the user and potentially create a session, it is considered an operation that can cause side effects. Therefore, it fits the semantics of a `POST` request rather than a `GET` request.
+
+```
+
+
+#### Securing Routes with JSON Web Tokens
+---
+
+````ad-question
+title: What is a JSON Web Token (JWT)?
+
+A JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. It is commonly used for authentication and data exchange in web applications.
+
+### Structure of a JWT
+
+A JWT consists of three parts:
+
+1. **Header**
+2. **Payload**
+3. **Signature**
+
+````
+
+From here, we'll be using the library [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) for a simple way to interact with JWT's.
+
+```bash
+npm i jsonwebtoken
+```
+
+```js
+const jwt = require("jsonwebtoken");
+```
+
+For most cases, you'll be using only 2 functions in order to create and validate the tokens:
+
+1. `jwt.sign({}, "", {}) -> jwt`
+2. `jwt.verify("", "") -> bool`
+
+```js
+const jwt = require('jsonwebtoken');
+
+// Secret key for signing the token
+// Usually stored in a .env file
+const secretKey = 'your-very-secret-key';
+
+// Data to include in the JWT payload
+const payload = {
+  userId: '1234567890',
+  name: 'John Doe',
+  admin: true
+};
+
+// Options for the token
+const options = {
+  expiresIn: '1h' // The token will expire in 1 hour
+};
+
+// Create (sign) the token
+const token = jwt.sign(payload, secretKey, options);
+
+console.log('Signed JWT:', token);
+
+// Verify and decode the token
+const data = jwt.verify(token, secretKey);
+
+console.log(data);
+```
+
+
+Despite the JWT seeming gibberish, it's clearly separated into 3 parts with periods. The *header*, *payload*, and *signature* respectively.
+
+To verify this, you can copy the middle payload into a [Base64 Decoder](https://www.base64decode.org/) to view the data being passed. 
+#### JWT Output
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxMjM0NSIsImlhdCI6MTcxNjU3ODc1NSwiZXhwIjoxNzE2NjY1MTU1fQ.12oDmBAIyIw6wmnvMLT-p2N3xLtNWn_sg0wpkkwZdg0
+```
+
+
+Tracking JWT
 
 
 
