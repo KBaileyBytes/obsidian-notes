@@ -128,8 +128,6 @@ collapse:
 
 ``````
 
-Test from Fedora
-
 ```ad-tip
 title: Context API Workflow
 
