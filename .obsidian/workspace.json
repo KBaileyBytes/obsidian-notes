@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "a68bc340c15dd06f",
+        "id": "f7f02584d8474d5a",
         "type": "tabs",
         "children": [
           {
@@ -61,7 +61,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,8 +231,11 @@
     "Notes/Python.md",
     "Timestamps/May 21, 2024.md",
     "Notes/React Module 8 - Working with Refs & Portals.md",
+    "Notes/React Module 11 - Handling Side Effects & useEffect.md",
     "Timestamps/May 20, 2024.md",
     "Timestamps/May 19, 2024.md",
+    "Project Ideas.canvas",
+    "MTG.canvas",
     "Notes/Linux APT vs DnF Commands.md",
     "Notes/EMacs Tutorial.md",
     "Timestamps/May 18, 2024.md",
@@ -256,9 +259,6 @@
     "Notes/www.netflix.com.md",
     "Notes/Basic Mongoose Validation.md",
     "Timestamps/May 16, 2024.md",
-    "Timestamps/May 15, 2024.md",
-    "Notes/createContext Default Value.md",
-    "Timestamps/May 14, 2024.md",
     "Media/Pasted image 20240513134108.png",
     "Media/Pasted image 20240513133634.png",
     "Media/Pasted image 20240513113338.png",
