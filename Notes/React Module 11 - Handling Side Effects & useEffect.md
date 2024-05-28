@@ -50,7 +50,7 @@ useEffect(() => {
 
 ### Cleanup Function
 
-- Used to clean up resources to avoid memory leaks or unwanted behaviors.
+- Used to clean up resources to avoid memory leaks or unwanted behaviours.
 - Typically involves clearing timers, unsubscribing from services, or other cleanup tasks.
 
 ```jsx

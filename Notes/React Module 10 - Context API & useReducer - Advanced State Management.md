@@ -227,6 +227,7 @@ export default function Cart({ onUpdateItemQuantity }) {
 
 ````ad-tip
 title: Consumer Component Example
+collapse: 
 
 ```jsx
 import { CartContext } from "../store/shopping-cart";
