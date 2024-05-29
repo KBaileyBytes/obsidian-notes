@@ -17,6 +17,7 @@ title: Learning Objectives
 icon: bullseye
 
 - [ ] [[#Authentication]]
+	- [ ] [[#Securing Routes with JSON Web Tokens]]
 - [x] [[#Password Encryption (bcrypt)]]
 - [ ] Data Relationships (FK?)
 
@@ -231,20 +232,12 @@ Since logging in involves sending sensitive information (such as a username and 
 #### Securing Routes with JSON Web Tokens
 ---
 
-````ad-question
-title: What is a JSON Web Token (JWT)?
+```ad-seealso
 
-A JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. It is commonly used for authentication and data exchange in web applications.
+- [[JSON Web Tokens]]
 
-### Structure of a JWT
+```
 
-A JWT consists of three parts:
-
-1. **Header**
-2. **Payload**
-3. **Signature**
-
-````
 
 From here, we'll be using the library [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) for a simple way to interact with JWT's.
 
@@ -301,7 +294,16 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxMjM0NSIsImlhdCI6MTcxNjU3ODc1NSw
 ```
 
 
-Tracking JWT
+```ad-tip
+title: Tracking JWT's
+collapse:
+
+A common practice to track JWT's for a User is to add a `tokens: [ { } ]` field to the model. This way, each token created by a user can be tracked from within the array.
+
+```
+
+
+
 
 
 
