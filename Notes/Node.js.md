@@ -10,7 +10,7 @@ category: Backend
 language: JavaScript
 documentation: https://nodejs.org/docs/latest/api/
 link_to: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
-current_lecture: "93"
+current_lecture: "110"
 total_hours: 35
 sections: 18
 lectures: 177
