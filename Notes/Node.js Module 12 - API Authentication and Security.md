@@ -2,11 +2,11 @@
 tags:
   - module
 lecture_count: "15"
-current_lecture: "4"
+current_lecture: "9"
 length: 3hr 17min
 status: Ongoing
 course_link: "[[Node.js]]"
-link: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729276#content
+link: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729308#content
 module_number: 12
 ---
 # `= this.file.name`
@@ -17,6 +17,7 @@ title: Learning Objectives
 icon: bullseye
 
 - [ ] [[#Authentication]]
+	- [ ] [[#Securing Routes with JSON Web Tokens]]
 - [x] [[#Password Encryption (bcrypt)]]
 - [ ] Data Relationships (FK?)
 
@@ -231,20 +232,12 @@ Since logging in involves sending sensitive information (such as a username and 
 #### Securing Routes with JSON Web Tokens
 ---
 
-````ad-question
-title: What is a JSON Web Token (JWT)?
+```ad-seealso
 
-A JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. It is commonly used for authentication and data exchange in web applications.
+- [[JSON Web Tokens]]
 
-### Structure of a JWT
+```
 
-A JWT consists of three parts:
-
-1. **Header**
-2. **Payload**
-3. **Signature**
-
-````
 
 From here, we'll be using the library [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) for a simple way to interact with JWT's.
 
@@ -256,7 +249,7 @@ npm i jsonwebtoken
 const jwt = require("jsonwebtoken");
 ```
 
-For most cases, you'll be using only 2 functions in order to create and validate the tokens:
+For most cases, you'll be using only 2 functions in order to create and validate JWT's:
 
 1. `jwt.sign({}, "", {}) -> jwt`
 2. `jwt.verify("", "") -> bool`
@@ -292,7 +285,7 @@ console.log(data);
 ```
 
 
-Despite the JWT seeming gibberish, it's clearly separated into 3 parts with periods. The *header*, *payload*, and *signature* respectively.
+Despite the JWT output seeming random, it's clearly separated into 3 different parts with periods. The *header*, *payload*, and *signature* respectively.
 
 To verify this, you can copy the middle payload into a [Base64 Decoder](https://www.base64decode.org/) to view the data being passed. 
 #### JWT Output
@@ -301,7 +294,138 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIxMjM0NSIsImlhdCI6MTcxNjU3ODc1NSw
 ```
 
 
-Tracking JWT
+`````ad-tip
+title: Creating & Tracking JWT's for Users
+
+A common practice to track JWT's for a User is to add a `tokens: [ { } ]` field to the model. This way, each token created by a user can be tracked from within the array.
+
+From your model, you can attach functions to the `methods` property that gets generated from creating a schema.
+
+```js
+schemaCreated.methods.methodName = async () => { };
+```
+
+<br>
+
+#### models/user.js
+```js
+// const token = await user.generateAuthToken();
+userSchema.methods.generateAuthToken = async function () {
+  const user = this;
+  const token = jwt.sign({ _id: user._id.toString() }, "secret-token");
+
+  user.tokens = user.tokens.concat({ token });
+  await user.save();
+
+  return token;
+};
+```
+
+<br>
+
+#### routers/user.js
+```js
+// Create User
+router.post("/users", async (req, res) => {
+  const user = new User(req.body);
+
+  try {
+    await user.save();
+
+    const token = await user.generateAuthToken();
+
+    res.status(201).send({ user, token });
+  } catch (e) {
+    res.status(400).send({ error: e });
+  }
+});
+
+// Log in user
+router.post("/users/login", async (req, res) => {
+  try {
+    const user = await User.findByCredentials(
+      req.body.email,
+      req.body.password
+    );
+
+    const token = await user.generateAuthToken();
+
+    res.send({ user, token });
+  } catch (e) {
+    res.status(400).send();
+  }
+});
+```
+
+
+`````
+
+
+## Express Middleware
+---
+
+From your app and *above* the other `app.use` calls, we can define middleware to run before every request.
+
+By supplying a function with 3 parameters `(req, res, next) => ` to `app.use()`, we have complete control over every request from within the function by either sending a custom response back, or continuing to the route handler and calling `next()`.   
+
+```js
+app.use((req, res, next) => {
+  if (req.method === "GET") {
+    res.send("GET requests are disabled."); // Cancel request
+  } else {
+    next(); // Continue request
+  }
+});
+```
+
+From here, we can use middleware to authenticate our JWT's.
+
+Check for an incoming auth token -> verify it -> find the associated user
+
+In most cases, we won't need to apply middleware to every route in our application. Thankfully, we have the ability to apply middleware to specific routes by applying it as an additional parameter within the request.
+
+#### middleware/auth.js
+```js
+const jwt = require("jsonwebtoken");
+const User = require("../models/user");
+
+const auth = async (req, res, next) => {
+  try {
+    const token = req.header("Authorization").replace("Bearer ", "");
+    const decoded = jwt.verify(token, "secret-token");
+    const user = await User.findOne({
+      _id: decoded._id,
+      "tokens.token": token,
+    });
+
+    if (!user) {
+      throw new Error();
+    }
+
+    req.user = user;
+
+    next();
+  } catch (e) {
+    res.status(401).send({ error: "Please authenticate. " });
+  }
+};
+
+module.exports = auth;
+```
+
+#### routers/user.js
+```js
+// Read Users
+router.get("/users", auth, async (req, res) => {
+  // Only run when next() is called from auth
+  try {
+    const users = await User.find({});
+    res.status(200).send(users);
+  } catch (e) {
+    res.status(500).send({ error: e });
+  }
+});
+```
 
 
 
