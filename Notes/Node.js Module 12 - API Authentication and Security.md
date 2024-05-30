@@ -6,7 +6,7 @@ current_lecture: "9"
 length: 3hr 17min
 status: Ongoing
 course_link: "[[Node.js]]"
-link: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729276#content
+link: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/learn/lecture/13729308#content
 module_number: 12
 ---
 # `= this.file.name`
