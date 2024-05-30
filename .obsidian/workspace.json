@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f7f02584d8474d5a",
+        "id": "1c2f4601a2fde52b",
         "type": "tabs",
         "children": [
           {
-            "id": "6720a7b3462a2528",
+            "id": "bb0c15cb07682daa",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -16,28 +16,28 @@
               "state": {
                 "file": "Dashboard.canvas",
                 "viewState": {
-                  "x": 1383.7897845769335,
-                  "y": -430.5467576532616,
-                  "zoom": -1.344594680643246
+                  "x": 1473.5,
+                  "y": -226.5,
+                  "zoom": -1.3411056945633661
                 }
               },
               "pinned": true
             }
           },
           {
-            "id": "b1d55e84d7150a52",
+            "id": "3d4df5ce8aeff4dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/React.md",
+                "file": "Timestamps/May 28, 2024.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0bb658fa9850592e",
+            "id": "9a602773546168e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,21 +47,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8d6f6e67a49c0a14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -129,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md",
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Notes/React Module 10 - Context API & useReducer - Advanced State Management.md"
+                "file": "Notes/React Module 11 - Handling Side Effects & useEffect.md"
               }
             }
           }
@@ -215,11 +203,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "8d6f6e67a49c0a14",
+  "active": "9a602773546168e1",
   "lastOpenFiles": [
+    "Timestamps/May 28, 2024.md",
+    "Dashboard.canvas",
+    "Timestamps",
     "Notes/React Module 11 - Handling Side Effects & useEffect.md",
     "Notes/React.md",
-    "Dashboard.canvas",
     "Notes/HTTP.md",
     "Notes/Node.js Module 12 - API Authentication and Security.md",
     "Notes/Node.js.md",
@@ -263,7 +253,6 @@
     "Media/Pasted image 20240513133634.png",
     "Media/Pasted image 20240513113338.png",
     "Media/Pasted image 20240513113122.png",
-    "I",
     "Untitled 1.canvas"
   ]
 }

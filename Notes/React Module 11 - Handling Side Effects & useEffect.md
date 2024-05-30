@@ -4,7 +4,7 @@ tags:
 lecture_count: "16"
 current_lecture: "16"
 length: 1hr 21min
-status: Ongoing
+status: Complete
 course_link: "[[React]]"
 link: https://www.udemy.com/course/react-the-complete-guide-incl-redux/learn/lecture/8231828#overview
 module_number: 1
@@ -250,7 +250,7 @@ export default function ExampleComponent() {
 ```
 
 
-`````ad-warning
+`````ad-danger
 title: Using Function Dependencies
 
 ```jsx
