@@ -140,8 +140,6 @@ function App() {
 }
 ```
 ````
-
-
 `````
 
 `````ad-example
@@ -212,8 +210,6 @@ export default function Modal({ open, children }) {
 }
 ```
 ````
-
-
 `````
 
 ## What are Effect Dependencies?

@@ -5,7 +5,7 @@ lecture_count:
 current_lecture: "0"
 length: 
 status: Archived
-course_link: '[[100 Days of Code - Python]]'
+course_link: '[[COMP 2160 - Programming Practices]]'
 link: 
 module_number: 1
 ---
@@ -16,7 +16,7 @@ module_number: 1
 title: Learning Objectives
 icon: bullseye
 
-- [ ] <% tp.file.cursor(0) %>
+- [ ] 
 
 ```
 
