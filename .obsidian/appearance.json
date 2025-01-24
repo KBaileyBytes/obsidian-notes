@@ -12,7 +12,7 @@
     "inline_code_block",
     "progress_bar"
   ],
-  "textFontFamily": "JetBrains Mono,Atkinson Hyperlegible,Myriad Pro,Montserrat,Inter,Garamond",
+  "textFontFamily": "Open Sans,Montserrat,Inter,JetBrains Mono,Atkinson Hyperlegible,Myriad Pro,Garamond",
   "interfaceFontFamily": "JetBrains Mono,Atkinson Hyperlegible,Myriad Pro,Inter",
   "monospaceFontFamily": "FiraCode Nerd Font,Inter,Myriad Pro,Cascadia Code",
   "theme": "obsidian",
