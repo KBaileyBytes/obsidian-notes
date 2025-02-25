@@ -39,6 +39,6 @@ List FROM "Notes" WHERE file.cday = this.file.cday and this.file.name != file.na
 ### Edited Today
 ---
 ```dataview
-List from "" where file.mday = this.file.cday and this.file.name != file.name
+List from "" where file.mday = this.file.mday and this.file.name != file.name
 ```
 
