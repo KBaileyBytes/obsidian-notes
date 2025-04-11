@@ -35,6 +35,12 @@ pomodoro_count: 0
 List FROM "Notes" WHERE file.cday = this.file.cday and this.file.name != file.name
 ```
 
+### Worked on Yesterday
+---
+
+```dataview
+List from "" where file.cday = date(yesterday)
+```
 
 ### Edited Today
 ---
